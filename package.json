@@ -1,0 +1,8 @@
+{
+  "name": "galyonj.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:galyonj/crown-of-horns.git",
+  "author": "John Galyon <galyon.jb@gmail.com>",
+  "license": "MIT"
+}
