@@ -1,0 +1,28 @@
+.jumbotron {
+	.jumbotron-text {
+		display: block;
+		text-align: center;
+
+		a {
+			color: #fff;
+			display: block;
+			font-size: $font-size-h1;
+			font-family: $headings-font-family;
+			font-weight: 400;
+			text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.8);
+
+			&:active,
+			&:focus,
+			&:hover {
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+
+		p {
+			border-top:  1px solid #fff;
+			color:       #fff;
+			padding-top: 20px;
+		}
+	}
+}
