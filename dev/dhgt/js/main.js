@@ -38,6 +38,20 @@ $( document ).ready( function() {
 			$( '.scroll-top' ).fadeOut( 'slow' );
 		}
 	} );
+
+	// Make sure that iframes and embeds are wrapped properly for responsive display
+	// collect everything that might contain embedded content
+	var allIframes = $( 'iframe[ src*="//player.vimeo.com" ], iframe[ src*="//www.youtube.com" ], iframe[ src*="//www.google.com/maps" ], object, embed' );
+
+	allIframes.each( function() {
+
+		// clean up the iframe element and add a
+		// responsive class to key on later for adding wrappers
+		$( this ).removeAttr( 'height width' ).addClass( 'embed-responsive-item' );
+
+		// add a wrapper around the iframe
+		$( this ).wrap( '<div class="embed-responsive embed-responsive-16by9"></div>' );
+	} );
 } );
 
 // Make the footer stay at the bottom of the browser
@@ -62,6 +76,11 @@ $( window ).on( 'load resize', function() {
 	// fix the jumbotron aspect ratio for consistent display
 	var content_width = $( '.content-wrapper' ).width();
 	var row_height    = $( '.jumbotron .row ' ).height();
+	var mqxs          = window.matchMedia( 'screen and ( max-width: 767px )' );
 
-	$( '.jumbotron').css( 'padding-top', content_width * 0.4 - row_height);
+	if( mqxs.matches === false ) {
+		$( '.jumbotron').css( 'padding-top', content_width * 0.4 - row_height);
+	} else {
+		$( '.jumbotron' ).css( 'padding-top', content_width * 0.4);
+	}
 } );

@@ -887,3 +887,9 @@ $large: "screen and ( min-width: 1200px )";
 // color
 $color: $input-border-focus;
 $color-rgba: rgba(red($color), green($color), blue($color), .6);
+
+// Filter mixin
+@mixin desaturate {
+	filter:     grayscale(100%);
+	transition: all $speed $easing;
+}

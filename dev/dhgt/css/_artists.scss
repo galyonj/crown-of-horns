@@ -1,4 +1,16 @@
 // Main artists page display
+.artist-item {
+	img {
+		@include desaturate;
+
+		&:active,
+		&:focus,
+		&:hover {
+			filter: none;
+		}
+	}
+}
+/*
 ul.artists {
 	list-style-type: none;
 	margin:          0;
@@ -38,4 +50,4 @@ ul.artists {
 			width: 359px;
 		}
 	}
-}
+}*/

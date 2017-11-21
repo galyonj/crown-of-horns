@@ -42,7 +42,7 @@
 			ga('send', 'pageview');
 		</script>
 	</head>
-	<body>
+	<body <?php body_class(); ?> data-scroll-id="page-top" id="page-top">
 		<div class="wrapper">
 			<a href="#" class="scroll-top" data-scroll><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
 			<div class="container">

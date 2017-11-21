@@ -50,16 +50,16 @@ function content_heading() {
 				if( $results !== 0 ) {
 					if( $results > 1 ) {
 						echo '<h1>';
-						printf( __( $results . ' results returned for &ldquo;%s&rdquo;', 'dhgt' ), get_search_query() );
+						printf( __( $results . ' results returned for &ldquo;%s&rdquo;', 'covnet' ), get_search_query() );
 						echo '</h1>';
 					} else {
 						echo '<h1>';
-						printf( __( $results . ' result returned for &ldquo;%s&rdquo;', 'dhgt' ), get_search_query() );
+						printf( __( $results . ' result returned for &ldquo;%s&rdquo;', 'covnet' ), get_search_query() );
 						echo '</h1>';
 					}
 				} else {
 					echo '<h1>';
-					printf( __( 'Nothing returned for &ldquo;%s&rdquo;', 'dhgt' ), get_search_query() );
+					printf( __( 'Nothing returned for &ldquo;%s&rdquo;', 'covnet' ), get_search_query() );
 					echo '</h1>';
 				}
 			} elseif( is_404() ) {

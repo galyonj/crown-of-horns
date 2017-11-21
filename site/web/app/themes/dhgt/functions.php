@@ -5,15 +5,13 @@
  * Created  April 30, 2017
  * @version 1.0.0
  * @package WordPress
- * @subpackage galyonj
+ * @subpackage dhgt
  */
 
 // Require stuff
 require_once 'inc/breadcrumbs.php';
 require_once 'inc/pagination.php';
-require_once 'inc/heading.php';
-require_once 'inc/editor.php';
-require_once 'inc/default-thumb.php';
+require_once 'inc/headings.php';
 
 // Enable support for excerpts on page content types
 function add_page_excerpts() {
@@ -163,11 +161,11 @@ function word_count() {
  */
 function manual_excerpt_more( $excerpt ) {
 	$excerpt_more = '';
-	$icon = '<i class="fa fa-plus-square" aria-hidden="true"></i>';
+	$icon = '<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>';
 	if( is_home() || is_category() || is_tag() || is_search() ) {
 
 		if( has_excerpt() ) {
-			$excerpt_more = '<a href="' . get_permalink() . '" rel="nofollow">' . $icon . '</a>';
+			$excerpt_more = ' <a href="' . get_permalink() . '" rel="nofollow">' . $icon . '</a>';
 		}
 
 	}

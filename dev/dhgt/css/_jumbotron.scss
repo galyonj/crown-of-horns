@@ -1,6 +1,10 @@
 .jumbotron {
+	background-size: cover;
+	background-position: center;
+
 	.jumbotron-text {
 		display: block;
+		line-height: 1;
 		text-align: center;
 
 		a {

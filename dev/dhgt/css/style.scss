@@ -74,13 +74,16 @@ Text domain: dhgt
 @import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 
 // Import theme-specific style partials
-@import 'structure';
-@import 'nav';
+//@import 'structure';
+@import 'header';
 @import 'footer';
 @import 'breadcrumbs';
 @import 'scroll-top';
-@import 'type';
-@import 'code';
-@import 'images';
-@import 'forms';
-@import 'comments';
+@import 'front-page';
+@import 'content';
+@import 'reviews';
+@import 'artists';
+@import 'posts';
+@import 'jumbotron';
+//@import 'forms';
+//@import 'comments';

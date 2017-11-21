@@ -23,22 +23,40 @@ header:not( [class] ) {
 	border-width: 0;
 
 	.navbar-toggle {
-		background: $brand-primary;
-		border: 1px solid darken($brand-primary, 10%);
-		margin-top: 30px;
+		background: transparent;
+		border:     none;
+		margin-top: 80px;
 
-		.toggle-text {
-			color: #cdcdcd;
-			text-transform: uppercase;
+		.icon-bar {
+			background-color:           $brand-primary;
+			height:                     6px;
+			transition:                 opacity, transform;
+			transition-duration:        $speed;
+			transition-timing-function: $easing;
+			width:                      40px;
+
+			& + .icon-bar {
+				margin-top: 6px;
+			}
 		}
 
-		&:active,
-		&:focus,
-		&:hover {
-			background: darken($brand-primary, 10%);
+		&:hover,
+		&:focus {
+			background: transparent;
+		}
 
-			.toggle-text {
-				color: #fff;
+		&:not(.collapsed) {
+			.icon-bar {
+				&:nth-child(1) {
+					transform: translateY(12px) rotate(45deg);
+				}
+				&:nth-child(2) {
+					opacity: 0;
+					transform: translateX(-100%);
+				}
+				&:nth-child(3) {
+					transform: translateY(-12px) rotate(-45deg);
+				}
 			}
 		}
 	}
@@ -146,7 +164,7 @@ header:not( [class] ) {
 			> li {
 				border: none;
 				display: inline-block;
-				padding: 25px 45px 15px 0;
+				padding: 25px 40px 15px 0;
 				vertical-align: middle;
 
 				&:last-of-type {
@@ -202,7 +220,7 @@ header:not( [class] ) {
 		.navbar-nav {
 
 			> li {
-				padding: 25px 84px 15px 0;
+				padding: 25px 78px 15px 0;
 				vertical-align: middle;
 
 				&:last-of-type {
@@ -231,7 +249,7 @@ header:not( [class] ) {
 		.navbar-nav {
 
 			> li {
-				padding: 25px 115px 15px 0;
+				padding: 25px 110px 15px 0;
 				vertical-align: middle;
 
 				&:last-of-type {

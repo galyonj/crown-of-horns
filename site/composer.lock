@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9d8c1a92b42e8b1679238ad93f40baac",
+    "content-hash": "860f1b4b745666d16b4d0e4137011ce8",
     "packages": [
         {
             "name": "composer/installers",
@@ -402,15 +402,15 @@
         },
         {
             "name": "wpackagist-plugin/autodescription",
-            "version": "2.9.4",
+            "version": "3.0.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/autodescription/",
-                "reference": "tags/2.9.4"
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/autodescription.2.9.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/autodescription.zip?timestamp=1511195613",
                 "reference": null,
                 "shasum": null
             },
@@ -442,15 +442,15 @@
         },
         {
             "name": "wpackagist-plugin/debug-this",
-            "version": "0.5.1",
+            "version": "0.5.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/debug-this/",
-                "reference": "tags/0.5.1"
+                "reference": "tags/0.5.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/debug-this.0.5.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/debug-this.0.5.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -462,7 +462,7 @@
         },
         {
             "name": "wpackagist-plugin/gmail-smtp",
-            "version": "1.1.5",
+            "version": "1.1.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gmail-smtp/",
@@ -470,7 +470,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gmail-smtp.zip?timestamp=1504155131",
+                "url": "https://downloads.wordpress.org/plugin/gmail-smtp.zip?timestamp=1510898368",
                 "reference": null,
                 "shasum": null
             },
@@ -659,6 +659,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-importer/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-facebook-reviews",
+            "version": "3.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-facebook-reviews/",
+                "reference": "tags/3.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-facebook-reviews.3.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-facebook-reviews/"
         }
     ],
     "packages-dev": [
