@@ -8,6 +8,9 @@ wordpress_sites:
       - canonical: galyonj.com
         redirects:
           - www.galyonj.com
+      - canonical: donnoshigherground.com
+        redirects:
+          - www.donnoshigherground.com
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     repo: git@github.com:galyonj/crown-of-horns.git # replace with your Git repo URL
     repo_subtree_path: site # relative path to your Bedrock/WP directory in your repo
@@ -18,6 +21,6 @@ wordpress_sites:
       domain_current_site: galyonj.com
     ssl:
       enabled: true
-      provider: self-signed
+      provider: letsencrypt
     cache:
       enabled: true
